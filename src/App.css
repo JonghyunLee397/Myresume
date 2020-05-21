@@ -1,6 +1,14 @@
 div{
   font-family: monospace;
 }
-.c1{
-  height: 30%;
+.flexC{
+display: flex;
+flex-direction: column;
+flex:1;
+width: 100%;
+height: 100%;
+}
+.flexR{
+  display: flex;
+  flex-direction: row;
 }

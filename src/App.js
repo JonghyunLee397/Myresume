@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import { 
   BrowserRouter as Router,
   Switch,
@@ -13,18 +12,17 @@ import About from './About/about'
 
 function App() {
   return (
-    <div style={{height:'100%'}}>
+    <div style={{height:"100%"}}> 
       <Router>
-        <Header class="c1"/>
-        <Switch>
-          <Route path='/test' exact>
-            <Home />
-          </Route>
-          <Route path='/about' exact>
-            <About/>
-          </Route>
-        </Switch>
-        <Footer />
+      <div className="flexC"> 
+        <div className="flexR" style={{flexShrink:1}}>
+        <Header></Header>
+        </div>
+        <div className="flexR" style={{flex:1}}>
+        <Route path='/home'/>
+        <Home></Home>
+        </div>
+      </div>
       </Router>
     </div>
   );
